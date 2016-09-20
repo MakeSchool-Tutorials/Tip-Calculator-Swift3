@@ -19,7 +19,7 @@ Let's do that now!
 > ## Importing into Images.xcassets
 > Watch the video and follow the steps below:
 >
-1. Download the [art pack](https://github.com/MakeSchool-Tutorials/Tip-Calculator-Swift/raw/master/logo.zip) for this tutorial.
+1. Download the [art pack](https://github.com/MakeSchool-Tutorials/Tip-Calculator-Swift3/raw/master/logo.zip) for this tutorial.
 1. Unzip the downloaded art pack (by double-clicking the downloaded folder).
 1. Select *Images.xcassets* from the project navigator.
 1. Drag the unzipped folder into the empty space.
@@ -28,7 +28,7 @@ Note: if you don't name the files this way, you have to manually import each ver
 >
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/19_add_assets.mp4)
 
-You should also note that we don't reference images in asset catalogs by their file name, but instead by the name of their Image Set. For this project, we only have "logo" but in the future we'll have more.
+You should also note that we don't reference images in asset catalogs by their file name, but instead by the name of their _Image Set_. For this project, we only have "logo" but in the future we'll have more.
 
 # Adding the logo
 
