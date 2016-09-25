@@ -26,7 +26,7 @@ Let's do that now!
 >
 Note: if you don't name the files this way, you have to manually import each version of each asset, and it takes up way more time.
 >
-![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/19_add_assets.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/19_add_assets.mp4)
 
 You should also note that we don't reference images in asset catalogs by their file name, but instead by the name of their _Image Set_. For this project, we only have "logo" but in the future we'll have more.
 
@@ -45,9 +45,8 @@ Let's add the Make School logo to our tip calculator!
 1. If the image is still not a square, go to the `Size Inspector` for the logo `UIImageView` and click `Edit` on the aspect ratio constraint to change its multiplier to be 1:1.
 1. `control` + `click and drag` from super stack view in the layout tree to the empty white space in the view square and add a `vertical spacing to bottom layout guide` constraint.
 1. Select the new constraint, change it's `relation` to `greater than or equal` and it's `constant` to `10`. This will make sure the super stack view will always have a bottom padding of at least `10`.
-1. Don't panic yet, but our `calculate` button just disappeared!
 >
-![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/20_adding_logo.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/20_adding_logo.mp4)
 
 # A splash of color
 
@@ -63,7 +62,7 @@ Now lets add some color to make this app stand out even more.
 1. Close the colors selector. (It is blocking the next setting we want to click).
 1. Now, notice the `Color` setting, currently set to black. Click the right side of that control (the blue part with arrowheads or carets), and select `White Color` from the drop down menu. Or use the _eye-dropper_ to sample white from our logo.
 1. Select the `calculate` button and go through the same steps to make the `background` blue and the text white.
-1. Run the app and admire how nice it looks with color! ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/22_adding_color.mp4)
+1. Run the app and admire how nice it looks with color! ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/22_adding_color.mp4)
 1. Open `ViewController.swift` and add the following code to make the iPhone status bar a bit prettier:
 >
 ```
@@ -82,7 +81,7 @@ Now that you have running it on your device, you may have noticed some UX/UI bug
 1. Select the `Tip Amount Field` and using the `Attributes Inspector`, disable this field by unchecking `Enabled` in the `Control` section.
 1. Do the same for `Total Amount Field`
 >
-![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/23_change_keyboard.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/23_change_keyboard.mp4)
 
 <!--  -->
 

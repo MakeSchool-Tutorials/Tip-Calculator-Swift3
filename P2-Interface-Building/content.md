@@ -29,14 +29,16 @@ Bask in its glory! In the `Utility Area` you can see a few attribute settings fo
 1. On the bottom right of the screen, in the `Object Browser`, scroll until you find `Label`
 1. Click and drag the `Label` into the white square in the middle of the screen (dashed-line guides will appear). You might need to zoom into the Storyboard if it won't let you drag the label in (pinch out on the trackpad or click the main area and press `command and +`)
 >
-![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/01_drag_label.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/01_drag_label.mp4)
 
 Currently you are in the `Attributes Inspector` part of the `Utility Area`. In this area, you will see all the _Attributes_ of the `UILabel`. In code, these are the external _properties_ that you can set on a `UILabel` object. If you are planning to change those attributes dynamically, you will have to do that in code. But if you are going to set them once, including certain automatic/dynamic settings, you can do that here. Let's jump right in.
 
 >[action]
 > ## Changing the label's text
 >
-> In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator` and press `enter`. Then set the `alignment` to `center`. ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/02_change_label.mp4)
+> In the `Attributes Inspector` change the `Text` value from `Label` to `Tip Calculator` and press `enter`.
+>
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/02_change_label.mp4)
 
 Uh oh. The label is too small to display the full text. We could use the little resizing squares to make it the right size, or even the aptly named `Size Inspector` to change its size. But we are going to use this opportunity to get started with the most powerful part of `Interface Builder` that developers would have killed for back in 1988.
 
@@ -57,7 +59,7 @@ Uh oh. The label is too small to display the full text. We could use the little 
 1. Click `Add 1 Constraint` and then click the `Resolve Auto Layout Issues` button (looks like a tie fighter with a triangle), click `update frames`.
 1. The label is still in the center so we need to move it up! With the label selected, click the line going from it upwards and change `constant` to `0` in the  `Attributes Inspector`  (right side of screen).
 >
-![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/03_top_label_constraint.mp4)
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/03_top_label_constraint.mp4)
 
 Let's quickly review what we did there. We added `constraints` to the label, so that its size will be set automatically. We told the label that it should sit `0` pixels from the top, `0` pixels from the left, and `0` from the right. This forces it to match the full screen width!
 
@@ -81,38 +83,27 @@ We are going to get most of our layout on the screen all at once and then slowly
 1. Repeat the hold `option`, click and drag two more times so you have `4` pairs of `label` & `text field`.
 1. Drag a `button` from the `Object Browser` under the labels.
 >
-> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/04_labels_button.mp4)
+> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/04_labels_button.mp4)
 
-# Checking out our work
+# Previewing our work
 
-Great! We have a few labels and text fields now. Even a button! Let's see how they look in the simulator.
+Great! We have a few labels, text fields, and even a button! We can preview our UI by running the app. This can get annoying if you are working somewhere deep in the app and want to test it out on multiple devices. Instead, you can use the "View as" button display a preview of the screen you are working on across multiple devices.
 
 >[action]
 >
-> Run the app and rotate the simulator to see how things move around when they are not set up with the proper pinning and constraints. Half the content is off screen in portrait mode, but it actually looks pretty decent in landscape! Regardless, we have a bit more layout work to do...
+Click on the `View as` button at the bottom of your storyboard. Play around with devices and see how it changes
+>
+![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/05_checking_work.mp4)
+
+Now you can check out some sample devices without having to launch your code. This is not a perfect solution and may not work when using custom controls you download from the internet or create yourself in the future. There are ways to make this work with these custom controls, but they may not be worth the tradeoff in time.
+
+Let's see how they look in the simulator.
+
+>[action]
+>
+> Run the app and rotate the simulator by clicking the play button to see how things move around when they are not set up with the proper pinning and constraints. The content looks fine in portrait mode, but it it is off in landscape! We don't actually need this to work in landscape but as we saw earlier, we have a bit more layout work to do...
 >
 You can rotate the simulator with `command + left/right arrow keys` or from the `Hardware menu -> Rotate Right / Left`.
->
-> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/05_running_it.mp4)
-
-Things are moving everywhere! Let's see if we can fix it automatically...
-
->[action]
-> ## Fixing it automatically?
->
-
-1. Click the empty space near the bottom of the view (the area in which we are laying things out).
-1. Click `Add Missing Constraints` from the _Resolve Auto-Layout Issues_ menu. Notice how a bunch of constraints are added on the left panel! Is this going to actually work...?
-1. Run the app and see how everything is still the same. Rotate to see again how its messed up there as well. Rotate back to see how its consistent at being messed up.
-1. Undo the changes with `control + z` (make sure to click back on the view first)
-
-Well that did not work :(
-
-Why did they do that? This is programming. In programming, the device does exactly what you tell it to. Nothing more, and nothing less. Most of the time, when something seems unexpected, you will feel like the device actually did more or less than it was asked. Almost every single time, that is not the case. It's user error.
-
-Now, you may not have been the user that made the error. But since you have built on top of someone else's error, it is your problem now. If this error proves to be critical, you will have to _work-around_ it, file a bug report, or maybe even fix it yourself. But we're not talking about low-level components of the operating system here, or even Xcode. We are talking about _auto-layout_!
-
-So how do we fix it? More constraints! Keep in mind that these constraints actually boil down to code that gets executed on the target device. So remember, it may feel like using _Microsoft Word_ or _Google Docs_ or even _Pages_ but its actually writing XML in a DSL (_Domain Specific Language_) that has a clear path to code being run.
 
 # Adding a segmented control
 
@@ -125,7 +116,7 @@ Before we start to fix the layout, let's actually change the second text field t
 1. Drag a `Segmented Control` from the `Object Browser` into its place (use the guides to position it).
 1. In the `Attributes Inspector`, change the `segments` from `2` to `3`.
 >
-> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/08_adding_segment.mp4)
+> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/08_adding_segment.mp4)
 
 # Fixing the widths
 
@@ -139,21 +130,6 @@ For the sake of consistency, we want all the `text fields` to have a width of `8
 1. Open the pin menu, check `width`, enter `85` and click `add 3 constraints` to apply the changes.
 1. Click on the `segmented control` and do the same but set the `width` to `125`
 >
-> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator/09_adding_widths.mp4)
->
-
-# Easier previewing
-
-We can preview our UI by running the app. This can get annoying if you are working somewhere deep in the app and want to test it out on multiple devices. Instead, you can use the `Assistant Editor` to display a preview of the screen you are working on across multiple devices.
-
->[action]
->
-1. Click on the linked rings/venn diagram (needs screenshot) to open the `Assistant Editor`. ![Opening the assistant inspector](./assistant_inspector.png)
-1. Click `Automatic` on the top bar and set it to `Preview`. ![Assistant preview](./preview.png)
-1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 5.5 inch'.
-1. Click on the `+` icon on the bottom left of the preview area to add an extra device. Select 'iPhone 4 inch'.
-1. Drag the divider between the `editors` to make more space.
-
-Now you should have some sample devices without having to launch your code. This is not a perfect solution and may not work when using custom controls you download from the internet or create yourself in the future. There are ways now to make this work with these custom controls, but they may not be worth the tradeoff in time. We will not be using this view in our videos because the screen space is precious! Feel free to keep this open if you have a big monitor (or even better, a second one)!
+> ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/09_adding_widths.mp4)
 
 Let's move on to the next page and fix up this layout!
