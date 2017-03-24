@@ -78,7 +78,7 @@ It's finally time to make this stack view full-screen! We'll be adding constrain
 >
 1. Select super stack view from the layout tree and open the `pin` menu.
 1. Activate the `left`, `top`, and `right` constraints. Set the `left` and `right` to `50`. Set the `top` to `20`.
-1. Click the `Resolve Auto-Layout Issues` button and `Update frames`.
+1. Click the `Update frames` button (looks like a refresh button).
 1. Run the simulator and see how nice it looks!
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/14_fix_super_stackview.mp4)
