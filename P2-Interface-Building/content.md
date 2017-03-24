@@ -56,7 +56,7 @@ Uh oh. The label is too small to display the full text. We could use the little 
 1. With the label still selected, control-click (or right-click) drag from the label to the parent `View`. In the menu that appears, select `Equal Widths`.  
 1. With the label still selected, press the `Pin` button (it looks kind of like a tie fighter!).
 1. Check `height` and set it to `80`.
-1. Click `Add 1 Constraint` and then click the `Resolve Auto Layout Issues` button (looks like a tie fighter with a triangle), click `update frames`.
+1. Click `Add 1 Constraint` and then click the `Update Frames` button (looks like a refresh button near `Pin` button).
 1. The label is still in the center so we need to move it up! With the label selected, click the line going from it upwards and change `constant` to `0` in the  `Attributes Inspector`  (right side of screen).
 >
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/03_top_label_constraint.mp4)
