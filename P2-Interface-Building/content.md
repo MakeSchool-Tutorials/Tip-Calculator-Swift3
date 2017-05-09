@@ -85,6 +85,9 @@ We are going to get most of our layout on the screen all at once and then slowly
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/04_labels_button.mp4)
 
+## Redo this entire Section. ##
+## The instructions are missing the step where you have to center the view. Even when you do, the view is not correctly aligned ##
+
 # Previewing our work
 
 Great! We have a few labels, text fields, and even a button! We can preview our UI by running the app. This can get annoying if you are working somewhere deep in the app and want to test it out on multiple devices. Instead, you can use the "View as" button display a preview of the screen you are working on across multiple devices.

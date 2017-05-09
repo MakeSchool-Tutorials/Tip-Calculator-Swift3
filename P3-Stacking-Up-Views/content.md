@@ -83,6 +83,8 @@ It's finally time to make this stack view full-screen! We'll be adding constrain
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/14_fix_super_stackview.mp4)
 
+
+## Video Needs to be redone ##
 Looking good!
 
 # Constraining the "rows"

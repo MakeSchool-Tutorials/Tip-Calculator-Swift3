@@ -21,7 +21,7 @@ Let's do that now!
 >
 1. Download the [art pack](https://github.com/MakeSchool-Tutorials/Tip-Calculator-Swift3/raw/master/logo.zip) for this tutorial.
 1. Unzip the downloaded art pack (by double-clicking the downloaded folder).
-1. Select *Images.xcassets* from the project navigator.
+1. Select *Assets.xcassets* from the project navigator.
 1. Drag the unzipped folder into the empty space.
 >
 Note: if you don't name the files this way, you have to manually import each version of each asset, and it takes up way more time.
@@ -44,7 +44,7 @@ Let's add the Make School logo to our tip calculator!
 1. `control` + `click and drag` from the image to the image to set an `aspect ratio` constraint for `1:1` (see video).
 1. If the image is still not a square, go to the `Size Inspector` for the logo `UIImageView` and click `Edit` on the aspect ratio constraint to change its multiplier to be 1:1.
 1. `control` + `click and drag` from super stack view in the layout tree to the empty white space in the view square and add a `vertical spacing to bottom layout guide` constraint.
-1. Select the new constraint, change it's `relation` to `greater than or equal` and it's `constant` to `10`. This will make sure the super stack view will always have a bottom padding of at least `10`.
+1. Select the new constraint, change it's `relation` to `greater than or equal (≥)`  and it's `constant` to `10`. This will make sure the super stack view will always have a bottom padding of at least `10`.
 >
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/20_adding_logo.mp4)
 
@@ -55,12 +55,12 @@ Now lets add some color to make this app stand out even more.
 >[action]
 >
 1. Select the `Tip Calculator` label.
-1. In the `Attributes Inspector` under `View` click on the `Background` attribute. This represents the default setting, which is fully transparent.
+1. In the `Attributes Inspector` under `View` click on the `Background` attribute (don't click on the blue arrows!). This represents the default setting, which is fully transparent.
 1. A color selection window has popped up. Click on the _eye-dropper_ to select the color in the same way a real eye-dropper or turkey baster would suck up liquid. It's on the bottom of the `Colors` palette, and if you have never seen one before, it also looks like a knife.
 1. Once you click it, you will notice your cursor has turned into a virtual _loupe_. (The thing jewelers use to look at diamonds, or graphic designers use to look at detail. In this case, both are relevant, since the graphic design we care about, is a diamond.)
 1. Move the _loupe_ over the blue part of the _Make School_ logo and click to select that color.
 1. Close the colors selector. (It is blocking the next setting we want to click).
-1. Now, notice the `Color` setting, currently set to black. Click the right side of that control (the blue part with arrowheads or carets), and select `White Color` from the drop down menu. Or use the _eye-dropper_ to sample white from our logo.
+1. Now, up at the top of the menu, notice the `Color` setting, which is currently set to black. Click the right side of that control (the blue part with arrowheads or carets), and select `White Color` from the drop down menu. Or use the _eye-dropper_ to sample white from our logo.
 1. Select the `calculate` button and go through the same steps to make the `background` blue and the text white.
 1. Run the app and admire how nice it looks with color! ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/22_adding_color.mp4)
 1. Open `ViewController.swift` and add the following code to make the iPhone status bar a bit prettier:
@@ -70,6 +70,7 @@ override var preferredStatusBarStyle: UIStatusBarStyle {
   return .lightContent
 }
 ```
+## Explain where to put this line of code ##
 
 # Changing the keyboard
 

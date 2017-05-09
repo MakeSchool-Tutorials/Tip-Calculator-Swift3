@@ -10,7 +10,7 @@ _Xcode_ makes it easy to connect your interface to code. Now that we've got an i
 >[info]
 >
 There are two main kinds of code connections: _outlets_, and _actions_. _Outlets_ let you assign a variable in code to a component of your interface you have created in your storyboard to interact with that component in code. We will use that to read and set values from our interface. _Actions_ let our code know when the user did certain things to an interface component that we want to react to.
-
+## This section could be rewritten to make a LOT more sense
 <!--  -->
 
 >[action]
@@ -26,6 +26,8 @@ There are two main kinds of code connections: _outlets_, and _actions_. _Outlets
 1. Add some space to clean up the file.
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/17_outlets_and_actions.mp4)
+## Probably a great time to explain the importance of using CamelCase
+
 
 # Adding the logic
 
