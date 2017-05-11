@@ -5,6 +5,8 @@ slug: congratulations
 
 Congratulations! You just built a fully functioning iOS app!
 
+Had an issue at some point? Just want to see the solution? [Download it here!] (https://github.com/MakeSchool-Tutorials/Tip-Calculator-Swift3-Solution/archive/master.zip)
+
 Throughout this tutorial you learned a lot about how to use Xcode including:
 
 * Adding elements to Storyboards

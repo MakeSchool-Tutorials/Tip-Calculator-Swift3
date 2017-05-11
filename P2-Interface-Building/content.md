@@ -53,7 +53,7 @@ Uh oh. The label is too small to display the full text. We could use the little 
 > We want this label to be the top bar. To do this, we want the constraints to put it at the top and make it the full screen width. Watch the video and follow the steps below:
 >
 1. With the label selected, hold `control` while clicking and dragging upwards. Let go and hold `option` so you can click `Top space to container margin`.
-1. With the label still selected, control-click (or right-click) drag from the label to the parent `View`. In the menu that appears, select `Equal Widths`.  
+1. With the label still selected, control-click (or right-click) drag from the label to the parent `View`. In the menu that appears, select `Equal Widths`. Select it again, control-click again, drag from the label to the parent `View` and from the menu select `Center Horizontally in Container`.
 1. With the label still selected, press the `Pin` button (it looks kind of like a tie fighter!).
 1. Check `height` and set it to `80`.
 1. Click `Add 1 Constraint` and then click the `Update Frames` button (looks like a refresh button near `Pin` button).
@@ -84,9 +84,6 @@ We are going to get most of our layout on the screen all at once and then slowly
 1. Drag a `button` from the `Object Browser` under the labels.
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/04_labels_button.mp4)
-
-## Redo this entire Section. ##
-## The instructions are missing the step where you have to center the view. Even when you do, the view is not correctly aligned ##
 
 # Previewing our work
 
@@ -135,4 +132,14 @@ For the sake of consistency, we want all the `text fields` to have a width of `8
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/09_adding_widths.mp4)
 
-Let's move on to the next page and fix up this layout!
+# Quick Review
+
+> So far, you should have:
+>
+1. Added a label to your storyboard and changed it's text to read "Tip Calculator"
+1. Learned the basics of Auto-Layout
+1. Added constraints to your label
+1. Created the basics of the User Interface by adding new labels, text fields, and a segmented control
+1. Learned how to modify existing constraints
+>
+> Let's move on to the next page and fix up this layout!

@@ -2,14 +2,29 @@
 title: "Getting started with Xcode!"
 slug: getting-started
 ---
-
+<br>
 ## Tutorial to the Tutorial
-
+<br>
 This tutorial will walk you through Xcode and its many different features to make a quintessentially "simple" app -- a "Tip Calculator". Every year this endeavor becomes simpler in some ways and more difficult in others. You will learn about using Xcode, building interfaces with _auto-layout_, and how to get an app running on your phone! Also, if you hail from a land that does not tip 15% to 20% at a restaurant, then you'll technically learn a bit about that too!
 
 This tutorial should take you about 2 hours. By the end of the tutorial, you'll have built this:
 
 ![Final outcome](./final.png)
+
+Looking to see the solution? [Download it here!] (https://github.com/MakeSchool-Tutorials/Tip-Calculator-Swift3-Solution/archive/master.zip)
+
+# Before You Begin
+<br>
+## Prerequisites
+<br>
+A basic understanding of Swift (Check out our [Getting Started With Swift](https://www.makeschool.com/academy/tutorial/getting-started-with-xcode-swift/get-started-with-xcode) tutorial if you need a refresher!)
+## Objectives
+<br>
+Create a brand new Xcode Project
+Learn the basics of Interface builder
+Create your own User Interface
+Put your own custom app on your iPhone
+
 
 # Author's Note
 

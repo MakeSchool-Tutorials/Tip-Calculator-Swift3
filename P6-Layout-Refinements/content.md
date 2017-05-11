@@ -89,4 +89,14 @@ Now that you have running it on your device, you may have noticed some UX/UI bug
 >[info]
 >This might output an error in the simulator. But do not worry! It will work on your physical device :)
 
-Wow, now things are looking pretty professional. Nice work for your first app!
+# Quick Review
+
+> Let's look at what you just did:
+>
+1. Learned about code connections and the difference between an outlet and an action
+1. Created Outlets for the Text Field objects
+1. Created an Action for the calculate button
+1. Added the logic into the class to make the buttons work
+1. Tested out the app on our phones (or on the simulator) to ensure that everything is working
+>
+> Wow, now things are looking pretty professional. Nice work for your first app!

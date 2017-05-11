@@ -117,3 +117,14 @@ Sure, you can also toggle between sections using the little icons in each sectio
 Hiding the debug area is a bit different, its shortcut is `command-shift-y`.
 >
 ![View -> Debug Area -> Show/Hide Debug Area](./hide_debug_area.png)
+
+
+# Quick Review
+
+> So far, you should have:
+>
+1. Created your first project!
+1. Learned a bit of history
+1. Explored the Xcode interface
+1. Learned about the Navigator, Utility, and Debug areas
+>
