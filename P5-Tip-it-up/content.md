@@ -96,7 +96,7 @@ Now that we have an interface, code connections, and logic... let's test it all 
 
 # Quick Review
 
-> Let's look at what you just did:
+> Let's look at what you just did in this section:
 >
 1. Learned about code connections and the difference between an outlet and an action
 1. Created Outlets for the Text Field objects
