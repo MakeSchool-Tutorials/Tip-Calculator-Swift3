@@ -9,7 +9,11 @@ _Xcode_ makes it easy to connect your interface to code. Now that we've got an i
 
 >[info]
 >
-There are two main kinds of code connections: _outlets_, and _actions_. _Outlets_ let you assign a variable in code to a component of your interface you have created in your storyboard to interact with that component in code. We will use that to read and set values from our interface. _Actions_ let our code know when the user did certain things to an interface component that we want to react to.
+There are two main kinds of code connections: _outlets_, and _actions_.
+>
+> _Outlets_ let you assign a variable in code to a component of your interface you have created in your storyboard to interact with that component in code. _Outlets_ are very useful for objects such as text fields, because it means that we can change the text within the field in our Swift class, by modifying the variable that is directly linked to it.
+
+> _Actions_ let you create a function in code that is called whenever a user interacts with a component of the interface. _Actions_ are great for buttons & segmented controls, because, for example, they tell our Swift class that the user has tapped that button with their finger.
 
 <!--  -->
 
@@ -90,4 +94,14 @@ Now that we have an interface, code connections, and logic... let's test it all 
 
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/18_testing_the_code.mp4)
 
-Looking good! Everything seems to work. On the next page, we'll make some small UI improvements before moving on to a more substantial app!
+# Quick Review
+
+> Let's look at what you just did in this section:
+>
+1. Learned about code connections and the difference between an outlet and an action
+1. Created Outlets for the Text Field objects
+1. Created an Action for the calculate button
+1. Added the logic into the class to make the buttons work
+1. Tested out the app on our phones (or on the simulator) to ensure that everything is working
+>
+> Looking good! Everything seems to work. On the next page, we'll make some small UI improvements before moving on to a more substantial app!

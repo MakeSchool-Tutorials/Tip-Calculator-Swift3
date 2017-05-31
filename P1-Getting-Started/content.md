@@ -24,9 +24,11 @@ Can you feel the power? It is okay if you can't. The result on your screen can b
 
 # A brief history lesson
 
-In 1985, Steve Jobs lost control at Apple and built a new company called NeXT. Initially, Jobs was sued by Apple; however, NeXT was eventually acquired by Apple in 1997. All the hard work of NeXT became the foundation for _Mac OS X_, _iOS_, _tvOS_, and _watchOS_.
+In 1985, Steve Jobs lost control of Apple and built a new company called NeXT. Initially, Jobs was sued by Apple; however, NeXT was eventually acquired by Apple in 1997. All the hard work of NeXT became the foundation for _Mac OS X_, _iOS_, _tvOS_, and _watchOS_.
 
-It gets even more interesting! When Apple first let 3rd party developers (you) make iOS applications, that rich history was brought to life once again. How? The original iPhone, introduced in 2007, had specs that were much closer to the products released by NeXT in the late 80s and early 90s than the MacBooks of its time. All of the efficiency of UI components that were meant for computers almost 30 years ago, meant that the iPhone felt snappy every time you interacted with it! It may not have felt that way with 2G internet attempting to load full desktop web pages, but, once they were loaded, things were buttery smooth. You could pan, zoom, and interact with a web page with your fingers for the first time in a natural and responsive way.
+It gets even more interesting! When Apple first let 3rd party developers (that's you!) make iOS applications, that rich history was brought to life once again. How? The original iPhone, introduced in 2007, had hardware that was much closer to the products released by NeXT in the late 80s and early 90s than the MacBooks of its time. All of the efficiency of UI components that were meant for computers almost 30 years ago, meant that the iPhone felt snappy every time you interacted with it! It may not have felt that way with 2G internet attempting to load full desktop web pages, but, once they were loaded, things were buttery smooth. You could pan, zoom, and interact with a web page with your fingers for the first time in a natural and responsive way.
+
+
 
 As a result, writing apps for the earlier versions of `iOS` meant using manual memory management -- something that new iOS may never have to do. This is especially the case with `Swift`, which provides automatic memory management. Don't worry though, there are plenty of ways to mess up with automatic memory management too! As you progress through our tutorials, we will highlight memory based issues and teach you how to build your apps to be the best!
 
@@ -34,7 +36,7 @@ The last interesting point we will bring up about Xcode's roots are _XML_ and th
 
 # Exploring Xcode
 
-As for the power, here we go. _Xcode_ is an _IDE_ or _Integrated Development Environment_. This means it has everything you need to _develop_ _integrated_ into its _environment_. That is why there are so many things on the screen.
+As for the power, here we go. _Xcode_ is an _IDE_ or _Integrated Development Environment_. This means it has everything you need to _develop_ is _integrated_ into its _environment_. That is why there are so many things on the screen.
 
 Other than the _editor_ component, located in the center of the window, there are three other sections. Under the `View` menu you can find `Navigators`, `Debug Area`, and `Utilities`. Moving forward, we will reference these areas as the `Navigator Area`, the `Debug Area`, and the `Utility Area`. These areas are referenced Left to Right, where the `Debug Area` is actually under the editor and currently disabled. The first time you run your project, the `Debug Area` might choose to pop up. Let's do that now, and see what happens.
 
@@ -115,3 +117,14 @@ Sure, you can also toggle between sections using the little icons in each sectio
 Hiding the debug area is a bit different, its shortcut is `command-shift-y`.
 >
 ![View -> Debug Area -> Show/Hide Debug Area](./hide_debug_area.png)
+
+
+# Quick Review
+
+> So far, you should have:
+>
+1. Created your first project!
+1. Learned a bit of history
+1. Explored the Xcode interface
+1. Learned about the Navigator, Utility, and Debug areas
+>

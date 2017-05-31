@@ -11,6 +11,21 @@ This tutorial should take you about 2 hours. By the end of the tutorial, you'll 
 
 ![Final outcome](./final.png)
 
+Looking to see the solution? [Download it here!] (https://github.com/MakeSchool-Tutorials/Tip-Calculator-Swift3-Solution/archive/master.zip)
+
+# Before You Begin
+
+## Prerequisites
+
+A basic understanding of Swift (Check out our [Getting Started With Swift](https://www.makeschool.com/academy/tutorial/getting-started-with-xcode-swift/get-started-with-xcode) tutorial if you need a refresher!)
+## Objectives
+
+Create a brand new Xcode Project
+Learn the basics of Interface builder
+Create your own User Interface
+Put your own custom app on your iPhone
+
+
 # Author's Note
 
 This is much more of a tutorial about Xcode then it is about programming. If you have never used an _Integrated Development Environment_ (IDE) before, this will get you acquainted with the minimum required knowledge to be proficient in Xcode, and even give you a taste of some of the more advanced stuff. Many times you may see multiple ways to do the same thing -- repetition is key. Our intent here is to show you as many ways as we can in the short duration of this tutorial.

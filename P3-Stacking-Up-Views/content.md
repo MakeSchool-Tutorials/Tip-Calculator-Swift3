@@ -110,4 +110,16 @@ The last piece of the puzzle is setting the values for each segment in the segme
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/16_fix_selector.mp4)
 
-Finally! We have a basic interface and it looks correct on all devices! Ready to get it running on your iPhone?
+# Quick Review
+
+> So far, you should have:
+>
+1. Learned the basics of Stack Views
+1. Added all of the interface components into stack views for each row
+1. Added all of those row stack views into one larger stack view
+1. Organized and renamed all of the labels, text fields, segmented control, and stack views
+1. Added spacing to the super stack view to make things look much better
+1. Added constraints to the super stack view and row stack views
+1. Learned how to change the labels of a segmented control
+>
+> Alright! We have a basic interface and it looks correct on all devices! Ready to get it running on your iPhone?
