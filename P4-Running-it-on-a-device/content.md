@@ -32,11 +32,10 @@ Great! Now you should be able to run the app. Try hitting the run button in _Xco
 
 # Quick Review
 
-> Before you move on, let's take a look at what we just did:
->
-> Xcode not only allows you to build on a simulator (i.e. a fake iPhone that runs on your computer) but also on your physical iPhone or iPad.
->
-> In order to do this, we had to set up your iCloud account with Xcode, which lets your phone know that the incoming app is from you, and isn't going to do anything evil or malicious.
-> Next, on your phone, you had to set yourself up as a trusted developer. This tells the device that the incoming app is coming from you.
->
-> Wondering my this process seems so needlessly complex? It all comes down to security. Apple wants to make sure that someone can't just plug into your phone and install an app that would steal all of your personal information, track what you type, or even watch your location!  
+Before you move on, let's take a look at what we just did:
+
+Xcode not only allows you to build on a simulator (i.e. a fake iPhone that runs on your computer) but also on your physical iPhone or iPad.
+
+In order to do this, we had to set up your iCloud account with Xcode, which lets your phone know that the incoming app is from you, and isn't going to do anything evil or malicious. Next, on your phone, you had to set yourself up as a trusted developer. This tells the device that the incoming app is coming from you.
+
+Wondering why this process seems so needlessly complex? It all comes down to security. Apple wants to make sure that someone can't just plug into your phone and install an app that would steal all of your personal information, track what you type, or even watch your location!  
