@@ -17,7 +17,8 @@ Looking to see the solution? [Download it here!] (https://github.com/MakeSchool-
 
 ## Prerequisites
 
-A basic understanding of Swift (Check out our [Getting Started With Swift](https://www.makeschool.com/academy/tutorial/getting-started-with-xcode-swift/get-started-with-xcode) tutorial if you need a refresher!)
+A basic understanding of Swift (Check out our Getting Started With Swift tutorial if you need a refresher!)
+
 ## Objectives
 
 Create a brand new Xcode Project
