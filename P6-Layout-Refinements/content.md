@@ -5,7 +5,7 @@ slug: updating-the-style
 
 ## Adding Assets to an App
 
-All assets used within an iOS app are stored in *Asset catalogs*. Every iOS projects that you create with Xcode comes with one default asset catalog called *Images.xcassets*.
+All assets used within an iOS app are stored in *Asset catalogs*. Every iOS project that you create with Xcode comes with one default asset catalog called *Images.xcassets*.
 
 That asset catalog contains one resource for the App's icon. You add new resources to your app by creating new entries (called *Image Sets*) in this asset catalog. You can also create multiple asset catalogs which is useful for apps with huge amounts of images.
 
