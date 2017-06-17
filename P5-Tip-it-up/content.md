@@ -23,7 +23,7 @@ There are two main kinds of code connections: _outlets_, and _actions_.
 1. Close the layout tree and attribute inspector to make some room.
 1. Open the assistant editor and make sure `ViewController.swift` is displayed by switching from "Preview" to "Automatic" in the dropdown menu above the assistant editor view window.
 1. Control-click (or right-click) drag from `bill amount text field` to under the `class ViewController` line and name the outlet `billAmountField`.
-1. Control-click (or right-click) drag from the `tip selector text field` and name the outlet `tipSelector`.
+1. Control-click (or right-click) drag from the `tip selector segmented control` and name the outlet `tipSelector`.
 1. Control-click (or right-click) drag from the `tip amount text field` and name the outlet `tipAmountField`.
 1. Control-click (or right-click) drag from the `total amount text field` and name the outlet `totalAmountField`.
 1. Control-click (or right-click) drag from the `calculate` button to the view controller. Choose `Action` and name it `calculateTip`.
