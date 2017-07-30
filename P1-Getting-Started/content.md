@@ -1,130 +1,409 @@
 ---
-title: "Your first project"
+title: "Getting Started With Xcode"
 slug: first-project
 ---
 
-## Creating a project
+As discussed previously, much of this tutorial will be learning about and getting familiar with Xcode. In this section, we'll have our first formal introduction with Xcode.
+
+# What is Xcode?
+
+Xcode is an _Integrated Development Environment_ (IDE) for developing apps in the Apple ecosystem. This includes macOS, iOS, watchOS, and tvOS apps. IDEs (like Xcode) contain and integrate many powerful tools that make software development easier for programmers.
+
+As you learn to build apps in Xcode, you'll use many of these tools. Tools that you'll use commonly on a daily basis include:
+
+- Source Code Editor: write and edit code
+- Interface Builder: build and visualize user interfaces (UI) without code
+- Debugger: test, catch and debug problems in your code
+- Compiler: helps you find mistakes in your code and offers "Fix-its" suggestions
+- Assistant Editor: edit multiple files in Xcode side-by-side
+- Simulator: test and run your app on a simulated iPhone on your computer
+
+## Why Xcode?
+
+Although it's technically possible to write iOS apps without using Xcode, it's not worth the trouble. If you're serious about making iOS apps, you must become fluent with using Xcode!
+
+It's important to note, that Xcode contains many advanced, powerful tools that are out of the scope of this tutorial.
+
+## Terms and Definition
+
+- compile-time
+- run-time
+- debug
+- user-interface
+- camel-case
+
+If you ever get confused or can't remember code-related jargon, don't hesitate to do a quick Google to refresh your memory!
+
+# Your First Xcode Project
+
+Firsts are always special. Now that we're a little more familiar with Xcode, we'll begin by creating our _first_ Xcode project.
+
+Get familiar with this process, you'll repeat it over and over whenever you start a new app!
 
 > [action]
+Create a new Xcode project:
 >
-1. Open _Xcode_
-1. From the `File` menu, select `New` and then `Project`
-1. Under `iOS`, within the `Application` section, select `Single View Application`, and click `Next` ![Creating a single view application](./create_new_project.png)
-1. Enter `TipPro` for `Product Name`.
-1. For `Team`, you can select your Apple Developer Team if you have one, or simply leave it as `None`.
-1. For `Organization Name`, you can enter your name, your fake company name, or `Make School`.
-1. For `Organization Identifier`, you use a reverse domain name style base for your apps. If you own `supercoolsecretstudios.com` you would put `com.supercoolsecretstudios`. If you don't own a domain name, feel free to put `com.makeschool` for this project.
-1. Select `Swift` as the `Language` and `iPhone` as the `Devices`.
-1. Leave `Use Core Data` and the other two boxes regarding _tests_ unchecked ![Creating a new project settings](./create_new_project2.png)
-1. Click `Next` and navigate to the place on your computer where you keep projects. Don't worry about naming the folder or anything like that, _Xcode_ will handle it for you.
-1. Keep the `Create Git Repository on My Mac` checkbox selected, and click `Create`
-1. Check that your Xcode project looks similar to this screenshot ![Newly created project](./new_project.png)
+1. Open _Xcode_ on your computer. You should see the following launch window after you open Xcode ![Launch Window](assets/xcode_launch_window.png)
+1. Next, from the launch window's quick options click `Create a new Xcode project` ![Create New Project](assets/create_new_project.png)
+1. You should see the following prompt to select a template for your new project. Under _iOS_, select _Single View App_ ![Select Template](assets/select_template.png)
+1. With your selected template, click _Next_. You should see a new prompt for your project details ![Set Project Details](assets/set_project_details.png)
 
-Can you feel the power? It is okay if you can't. The result on your screen can be very overwhelming at first. Parts of this software such as the _Interface Builder_ date back to 1988, and _Xcode_ itself dates back to something called _Project Builder_ -- first released in 1992! There is a lot of interesting history around Xcode.
-
-# A brief history lesson
-
-In 1985, Steve Jobs lost control of Apple and built a new company called NeXT. Initially, Jobs was sued by Apple; however, NeXT was eventually acquired by Apple in 1997. All the hard work of NeXT became the foundation for _Mac OS X_, _iOS_, _tvOS_, and _watchOS_.
-
-It gets even more interesting! When Apple first let 3rd party developers (that's you!) make iOS applications, that rich history was brought to life once again. How? The original iPhone, introduced in 2007, had hardware that was much closer to the products released by NeXT in the late 80s and early 90s than the MacBooks of its time. All of the efficiency of UI components that were meant for computers almost 30 years ago, meant that the iPhone felt snappy every time you interacted with it! It may not have felt that way with 2G internet attempting to load full desktop web pages, but, once they were loaded, things were buttery smooth. You could pan, zoom, and interact with a web page with your fingers for the first time in a natural and responsive way.
-
-
-
-As a result, writing apps for the earlier versions of `iOS` meant using manual memory management -- something that new iOS may never have to do. This is especially the case with `Swift`, which provides automatic memory management. Don't worry though, there are plenty of ways to mess up with automatic memory management too! As you progress through our tutorials, we will highlight memory based issues and teach you how to build your apps to be the best!
-
-The last interesting point we will bring up about Xcode's roots are _XML_ and the _command line_. The _Xcode_-specific parts of your app's code base are based in XML, and every project action (like building your app) can be done using command line tools included with Xcode. Why is this important? Well, when you want to do something advanced in the future, these tools will come in handy. When you get a build error in _Xcode_, Xcode will make available the exact commands it used to build your project, including the output of what failed. Hopefully, this is something you will not experience in your first year of using _Xcode_ (a build error, as opposed to a compilation error, which you'll have plenty of) but the first time it happens, remember this paragraph.
-
-# Exploring Xcode
-
-As for the power, here we go. _Xcode_ is an _IDE_ or _Integrated Development Environment_. This means it has everything you need to _develop_ is _integrated_ into its _environment_. That is why there are so many things on the screen.
-
-Other than the _editor_ component, located in the center of the window, there are three other sections. Under the `View` menu you can find `Navigators`, `Debug Area`, and `Utilities`. Moving forward, we will reference these areas as the `Navigator Area`, the `Debug Area`, and the `Utility Area`. These areas are referenced Left to Right, where the `Debug Area` is actually under the editor and currently disabled. The first time you run your project, the `Debug Area` might choose to pop up. Let's do that now, and see what happens.
+In this new prompt, we'll set some basic info and details that Xcode needs to create a new project.
 
 > [action]
+In the project details prompt, enter the following information:
 >
-1. `Run` the project by clicking the `Play` button on the top left of the project window.
-1. The first time you run something with debugging in `Xcode`, you will see a dialog like this, asking for your computer password. This is necessary for debugging. ![Debugging password request](./enter_password.png)
+1. In the _Product Name_ field, enter `TipPro`. This is what Xcode will name your project in your file directory. To prevent potential name-related problems, it's best to stick with alphanumeric characters (letters and numbers) and avoid special characters.
+1. In the _Team_ dropdown menu, set it as `None`. If you already have an `Apple Developer Team`, you can select that instead.
+1. In the _Organization Name_, you can enter one of the following: your name, your fake company name, or _Make School_.
+1. In the _Organization Identifier_, set it as _com.makeschool_. If you own a domain name, you can set this field as your reverse domain name. For example, if you own the domain name _happycarrot.com_, you would put _com.happycarrot_ as your identifier.
+1. The _Bundle Identifier_ will be automatically constructed from your _Organization Identifier_ and _Product Name_. Apple uses the bundle identifier to uniquely identify each app in the _App Store_.
+1. In the _Language_ dropdown menu, make sure it's set to `Swift`.
+1. Finally, leave all three checkboxes unchecked. We won't use _Core Data_ or testing in this tutorial.
 
-You should see the `iOS Simulator` launch, and our exciting app (a blank white screen) is there in all of its retina perfection.
+When you're finished, you should have something similar to the following:
 
-But what about our Xcode window. Nothing changed? Hmm. Thats interesting. Here's why: Apple is notorious for the polish they put into their products. But when you are a developer, you need power. There is a trade-off here, and it makes for an important lesson. The default settings for Xcode will show the debugger as needed. When you are done with it, you have to hide it yourself, but if you are using the screen built into your _MacBook_ and not a larger monitor, all of these things will overwhelm the area where you are actually working. There are multiple ways to do this. One is the `Behaviors` section in the `Preferences`, and the other is manually toggling these sections. If you ever find a time where one of the sections, covered in this tutorial, changes or pops-up _automatically_, that is considered a _behavior_ of _Xcode_ and can be edited by opening the Preferences menu -> Behaviors -> Running -> Generates Output.
-![Preferences -> Behaviors -> Running -> Generates Output](./behavior_preferences.png)
+![Filled Project Details](assets/filled_project_details.png)
 
-# Overview of the areas
+> [action]
+To finish up and create our new project:
+>
+1. After filling out your project details above, click _Next_. ![Project Details Next](assets/project_details_next.png)
+1. Xcode will now prompt you to select where you'd like to store your project. Using the file navigator, choose to a place on your computer to store your project. If you don't have a place in mind, you can use your `Documents` folder. ![Select Project Location](assets/select_project_location.png)
+1. Make sure you keep the _Source Control_ checkbox selected for _Create Git repository on my Mac_. ![Enabled Source Control](assets/check_source_control.png)
+1. After you've selected a project location and verified that the _Source Control_ checkbox is selected, click the `Create` button. ![Create Project](assets/create_project.png)
 
-![Overview of Xcode](./exploring_xcode.png)
+Congrats! Meet your first new project. You should see the following:
 
-## Navigator Area
+![New Tip Pro](assets/new_tip_pro.png)
 
-Let's jump right into the _Navigator_ on the left side. Currently, it should display the _Project Navigator_ which is where you will find files related to your project. If the files are not in here, then your app will not be able to use them. It doesn't matter if they are in the same folder as other included files, Xcode manages its own files so they must show up in the _Project Navigator_!
+Can you feel the sparks? I think this is the start of something special.
 
-## Utility Area
+# Getting To Know Xcode
 
-The `Utility Area` on the right side is essential when you are building interfaces. It contains an object browser on the bottom right, which you will use extensively for setting up your interfaces. It is also context sensitive to what you are editing. But we'll get to that shortly.
+Before we can start making our app, we'll first need to learn about Xcode and how it works.
+
+In this step, we'll get familiar with Xcode. We'll learn about each of the different tools Xcode gives us so we can build our tip calculator.
+
+When you create a new project or open a previously existing project, you should see something similar to the following:
+
+![New Tip Pro](assets/new_tip_pro.png)
+
+Woah! At first glance, you'll notice there's a lot going on. Tabs, buttons, panels and text fields everywhere!
+
+If you feel overwhelmed, take a deep breath.
+
+In the next step, we'll walk through Xcode together and learn how to harness it's power.
+
+## Navigating Xcode
+
+Xcode is broken down 4 main areas + a toolbar:
+
+![Xcode Areas](assets/xcode_areas.png)
+
+Here's a quick breakdown of each of the areas above:
+
+1. Toolbar: displays key information about project, expand/collapse other areas, run project
+1. Navigator: find files, search in your project, manage source control, navigate errors
+1. Editor Area: write code, build UI with storyboard, change project settings
+1. Utilities: gives info about files, set properties of items in Interface Builder
+1. Debug Area: test and debug your code at runtime
+
+Each area has many more tools and features built-in, so don't think of the summary above as a comphrensive list. We've just highlighted the key functions of each part of Xcode. Next, we'll explore each area for a better understanding of what each area does.
+
+# Toolbar
+
+First, we'll start by learning about the toolbar and what it does.
+
+![Xcode Toolbar](assets/xcode_toolbar.png)
+
+## Running Your App
+
+If you look at the first group of buttons on the left-hand side, you should see:
+
+![Toolbar Run Section](assets/toolbar_play.png)
+
+This section allows you to build and run your app on either a simulator or your iPhone.
+
+### Run Button
+
+![Run Button](assets/toolbar_run_btn.png)
+
+The _Run_ button will build and run your app on a specified device.
+
+### Stop Button
+
+![Stop Button](assets/toolbar_stop_btn.png)
+
+The _Stop_ button (looks like a square) will stop the instance of your app if it is currently running.
+
+### Scheme Dropdown
+
+![Manage Scheme](assets/toolbar_scheme.png)
+
+The _Scheme_ dropdown menu will allow you to edit and manage multiple _schemes_. A _scheme_ defines what Xcode does when you run your app.
+
+When you click the _Run_ button, it builds and runs the selected scheme. In our case, the _Run_ button will launch our app on the selected device.
+
+You can also specify a simulator or device that your want your scheme to run on. Click on the right-side of the _Scheme_ dropdown to see a full list of options. If you connect your iPhone to your computer, you'll see your device to show up as an option as well.
+
+![Device Dropdown](assets/toolbar_scheme_dropdown.png)
+
+### Putting It Together
+
+Now that we know more, let's build and run our app.
+
+> [action]
+1. Change the _Scheme Device_ dropdown to an iOS `iPhone 7 Plus` simulator. ![Device Dropdown](assets/toolbar_scheme_dropdown.png)
+1. Click the _Run_ button. You can also use the keyboard shortcut, command-R (CMD-R) ![Run Button](assets/toolbar_run_btn.png)
+
+The first time you run your app, you may see a dialog that asks for your password:
+
+![Debug Permission](assets/debug_dialog.png)
+
+Enter and click `Continue`. This permission is necessary to run your app using the _debugger_ (more on this later.)
+
+If all goes well, you'll see a simulator with your app launch:
+
+![Empty Simulator](assets/empty_simulator.png)
+
+If you're wondering why there's just a blank white screen, it's because we haven't added anything to our app yet.
+
+## Xcode Status Bar
+
+Next we'll look at the status bar in the middle of the toolbar:
+
+![Toolbar Status](assets/toolbar_status.png)
+
+The status bar displays key information about Xcode and your project. This includes the following:
+
+- building, running, stopped status info
+- project warnings and errors
+
+Whenever you build, run or stop your project, the status bar will let you know Xcode's status and if the action was successful. You might have noticed when you clicked the _Run_ button in the previous step.
+
+Let's look at some of the status updates the status bar provides.
+
+### Building
+
+<!-- FIXME: student's probably don't even know what building is -->
+
+![Building Status](assets/status_building.png)
+
+When the Xcode builds your app, you'll even see a progress bar with details on what happening during the build process.
+
+Even better, Xcode will let your know warnings and errors found during the build process:
+
+![Error Status](assets/status_error.png)
+
+Notice the 2 warnings and 7 errors on the right most side of the status bar. In your own projects, you should make sure there are **no** warnings or errors in your project.
+
+### Running
+
+Xcode will also let you know when an instance of your project is running on a device or simulator:
+
+![Status Running](assets/status_running.png)
+
+Or if it's finished running:
+
+![Status Stopped](assets/status_stopped.png)
+
+## Xcode View Options
+
+Last, we'll look at the last set of buttons on the far right of the toolbar:
+
+![Toolbar View Options](assets/toolbar_view_options.png)
+
+Each of these buttons hides or displays different views options for Xcode.
+
+### Editor Modes
+
+![Change Editors](assets/toggle_editors.png)
+
+The first three buttons toggle the editor between three modes (from left to right):
+
+- Standard Editor: the default editor for displaying and editing files
+- Assistant Editor: edit two or more files side-by-side at the same time
+- Version Editor: view versioning and source control details of your files
+
+You can see from the gif below how clicking on each button corresponding to each editor type changes the editor area:
+
+![Editor Modes](assets/editor_types.gif)
+
+### Hiding and Showing Xcode Area
+
+The last three buttons hide and show 3 of the main Xcode areas we learned about earlier: Navigator, Debug Area, Utilities.
+
+![Toggle Main Areas](assets/toggle_main_areas.png)
+
+These buttons allow you to display each respective area when you need it and hide it otherwise. By only displaying areas that we need, we can save more screen space for displaying and editing code!
+
+![Toggle Main Areas Gif](assets/toggle_main_areas.gif)
+
+In this step, we've looked at the toolbar and all it's components. Next, we'll briefly cover the 4 main areas of Xcode.
+
+# Navigator
+
+![Navigator Overview](assets/navigator_overview.png)
+
+The navigator pane contains multiple tabs (called navigators) for many different tools in Xcode.
+
+You can change tabs by clicking on the different icons at the very top of the navigator.
+
+![Navigator Top Tab](assets/navigator_top_tab.png)
+
+Each of these navigator tabs are useful tools that you'll eventually learn to use. Some of the most important ones are:
+
+- _Project navigator_: navigate and change files
+- _Source Control navigator_: manage versioning and source control
+- _Find navigator_: search through your project to find files
+- _Issue navigator_: locate and fix warnings and errors in your project
+
+In this tutorial, we'll only focus on the first tab, the _Project navigator_.
+
+<!-- TODO: seems like the Issue navigator should also be covered -->
+
+### Project Navigator
+
+In your Navigator pane, click on the first tab which is an icon that looks like a file.
+
+You should see the following:
+
+![Project Navigator](assets/project_navigator.png)
+
+There are many different types of files in our Xcode project. Let's take a look at some of them now.
+
+Currently, in the image above, the file _ViewController.swift_ is selected. Instead, let's click on and navigate to the _Project Settings_:
+
+You should see the following in your _Navigator_ and _Editor Area_:
+
+![Project Settings](assets/project_settings.png)
+
+Every time you select a different file in the _Project Navigator_, it'll be displayed in the _Editor Area_. Right now we're looking at our project settings. Here we can change project settings such as the app display name, minimum device OS, and many more default project configurations.
+
+Next, let's open _ViewController.swift_:
+
+![Swift Source File](assets/swift_source_file.png)
+
+_ViewController.swift_ is a default source file that comes included in every _Single App_ template Xcode project. As you can see files with a _.swift_ extension contain _Swift_ code that will be used to implement logic for your apps.
+
+Next, switch to the _Main.storyboard_ file using your _Project Navigator_:
+
+![Storyboard File](assets/storyboard_file.png)
+
+You'll notice the _Editor area_ has completed changed again. You view and edit _.storyboard_ files with _Interface Builder_ which allow you to quickly create UI and user flows for your app. We'll learn more about this in upcoming sections.
 
 > [info]
->
-There are ways for more advanced projects to automatically _bundle_ or include files into your app, but for now, anything not in there, should be considered not part of your app. If you do not see something similar to the screenshot below, then you need to select `View -> Navigators -> Show Project Navigator`, click the little folder icon on top of the navigator, or use the keyboard shortcut `command-1`.
-![Project Navigator](project_navigator.png)
+If you look at what's in the storyboard, you might recognize something familiar: the blank, white screen that we saw earlier when we ran the simulator!
 
-As you progress and work on larger projects, the true power of the `Navigator Area` will reveal itself. We will continue to discuss navigators, but for now, let's test out the `Debug Area`. The default behavior setting said that it would display the `Debug Area` if there was some output. So let's output something!
+# Editor Area
 
-## Debug Area
+Through using the _Project Navigator_, we've casually been introduced to the _Editor area_.
+
+![Editor Area](assets/editor_area.png)
+
+As you can probably guess, the _Editor area_ is used for viewing and editing files. You'll use this area for writing code in _.swift_ files, building UI in _Interface Builder_ and much more. We've already covered how to switch between these different files.
+
+Before we move on, let's go over the assistant editor again. You might recall that you can switch between Editor types using the toolbar buttons we cover earlier:
+
+![Toggle Editors](assets/toggle_editors.png)
+
+If you click on the middle button (looks like two overlapping circles) you'll see the assistant editor.
+
+![Assistant Editor](assets/assistant_editor.png)
+
+You can use the assistant editor to open and edit multiple files side-by-side. This will be important when you're connecting UI in _.storyboard_ files to code in _.swift_ files.
+
+Click on the first button of the editor types in your Xcode toolbar to change your editor back to the standard editor.
+
+As you can start to see, all of the tools, areas and components of Xcode work together to help you easily build apps.
+
+# Utilities
+
+Next, let's take a quick look at the _Utilities_ pane.
 
 > [action]
+First, navigate to your _Main.storyboard_ file using your _Project Navigator_.
+
+Make sure your _Utilities_ pane is open with your toolbar. You should the following:
+
+![Storyboard Utilities](assets/storyboard_utilities.png)
+
+Just like the _Navigator_, the _Utilities_ pane has multiple different tabs called inspectors.
+
+![Utilities Inspectors](assets/utilities_inspectors.png)
+
+The first inspector is the file inspector that gives you more information about the currently selected file.
+
+Let's switch to the _Attributes Inspector_, the 4th inspector from the left. You should see the following:
+
+![Storyboard Attributes Inspector](assets/storyboard_attrs_inspector.png)
+
+Next, click on the _ViewController_ in the storyboard. Use the _Document Outline_ on the left-side of the editor to make sure you have the _View_ selected.
+
+![View Utilities](assets/view_utilities.png)
+
+Notice that the info and options in the _Utilities_ pane has completely changed. This is because the _Utilities_ displays details and options for whatever item is currently selected. This applies to files, code, and as you just saw, objects in storyboard.
+
+> [action]
+With the _View_ selected, use the _Attributes Inspector_ to change the background color from white to another color.
 >
-Select `AppDelegate.swift` from the project navigator. Find this block of code:
+![Change Background Color](assets/change_bg_color.gif)
+
+With our new change, run the app in a simulator. What do you see?
+
+![Orange Screen](assets/orange_screen.png)
+
+> [challenge]
+Before moving on, set the background color of your _View_ back to white.
+
+### Object Library
+
+We've covered the top half of the _Utilities_ pane. Now briefly discuss the bottom half of the _Utilities_ pane.
+
+![Utilities Bottom](assets/utilities_bottom.png)
+
+The bottom half of the utilities allows you to drag pre-built components from your library into your project. These components include file templates, code snippets, and IB objects.
+
+You'll mainly be using this pane for the object library to drag and drop IB objects into your _.storyboard_ files.
+
+# Debug Area
+
+The last main area we need to discuss is the _Debug area_.
+
+The _Debug area_ will help you to test and debug your code for runtime errors. That means if you get unexpected behavior or crashes, you can use the debugger to figure out whats causing problems.
+
+A very basic form of debugging, or figuring out why unexpected behavior is happening, is by using print statements. Let's try that out now.
+
+> [action]
+Navigate to _AppDelegate.swift_ using your project navigator. In the function, `func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool`, add the following code:
 >
 ```
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-  // Override point for customization after application launch.
-  return true
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    // Override point for customization after application launch.
+>
+    let secretMessage = "spaces over tabs"
+    print("secret message: \(secretMessage)")
+>
+    return true
 }
 ```
->
-> Add `print("Hello Make School!")` so that it looks like this:
->
-```
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-  // Override point for customization after application launch.
-  print("Hello Make School!")
-  return true
-}
-```
->
-Hit `Run` or the `Play` button on the top left.
 
-Once you see the white screen of your app in the simulator, you should see the `Debug Area` pop up, with our _console_ output from the `print` statement.
+After you've made the changes above to your app delegate, run your project in the simulator. Notice that when the app launches, the print statement is logged in the _Debug Console_.
 
-![A wild debug console appears!](./debug_console.png)
+![Debug Console](assets/debug_console.png)
 
-See how it's starting to feel a little crowded (especially if you are on a laptop)? You can hide the debug area now by using the keyboard shortcut, the view menu, the `bottom of the window` button on the top right of the window, or, the little `triangle in a box` icon on the top of the debug area.
+You can use print statements to make sure your app behaves as expected at runtime.
 
-There are a lot of ways to do even the simplest things in _Xcode_. Keep this in mind as you read tutorials, search for answers, and ask your peers for help. As you gain experience, you may be more productive with shortcuts, but when you're teaching someone else, you may want to start with the long way.
+Although that are many more tips, tools, and tricks for using the debugger, we won't cover them in the scope of this tutorial.
 
-# Hiding and showing parts of the interface
-
-Everything else is controlled manually and the best way to do that is with keyboard shortcuts. Of course, you can also use your mouse and click on the _left_, _bottom_, and _right_ icon representations in the top right of your _Xcode_ window. ![Show Hide buttons](./show_hide_buttons.png)
-
-> [info]
->
-Sure, you can also toggle between sections using the little icons in each section. In fact, this is the way you should start off changing things when you are already using your preferred pointing device (mouse, trackpad, etc). But, when you are typing, you will want to learn the keyboard shortcuts to get these things out of the way. When you are focused in code, these things usually get in your way, and are the least productive way to get around; and, in many cases, have settings or information that are irrelevant to the task at hand. The choices for these sections are usually numbered and the number `0` is usually reserved for hiding that section.
->
-![View -> Navigators -> Show/Hide Navigator](./hide_navigator.png)
->
-![View -> Utilities -> Show/Hide Utilities](./hide_utilities.png)
->
-Hiding the debug area is a bit different, its shortcut is `command-shift-y`.
->
-![View -> Debug Area -> Show/Hide Debug Area](./hide_debug_area.png)
-
+Next, we'll move on to creating our UI for our tip calculator in our storyboard file.
 
 # Quick Review
 
 > So far, you should have:
 >
-1. Created your first project!
-1. Learned a bit of history
+1. Created your first Xcode project
 1. Explored the Xcode interface
-1. Learned about the Navigator, Utility, and Debug areas
+1. Learned more about each of Xcode's 4 main areas
 >
