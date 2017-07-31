@@ -22,15 +22,19 @@ As you learn to build apps in Xcode, you'll use many of these tools. Tools that 
 
 Although it's technically possible to write iOS apps without using Xcode, it's not worth the trouble. If you're serious about making iOS apps, you must become fluent with using Xcode!
 
-It's important to note, that Xcode contains many advanced, powerful tools that are out of the scope of this tutorial.
+
+> [info]
+It's important to note, that Xcode contains many more advanced, powerful tools than the ones mentioned here. These are out of the scope of this tutorial.
 
 ## Terms and Definition
 
 - compile-time
 - run-time
 - debug
-- user-interface
+- user interface (UI)
 - camel-case
+- dynamic
+- static
 
 If you ever get confused or can't remember code-related jargon, don't hesitate to do a quick Google to refresh your memory!
 
@@ -359,7 +363,7 @@ Before moving on, set the background color of your _View_ back to white.
 
 ### Object Library
 
-We've covered the top half of the _Utilities_ pane. Now briefly discuss the bottom half of the _Utilities_ pane.
+We've covered the top half of the _Utilities_ pane. Now, let's briefly discuss the bottom half of the _Utilities_ pane.
 
 ![Utilities Bottom](assets/utilities_bottom.png)
 

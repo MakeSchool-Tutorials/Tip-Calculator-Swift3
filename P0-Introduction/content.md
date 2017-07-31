@@ -3,9 +3,9 @@ title: "Intro to Tip Calculator"
 slug: getting-started
 ---
 
-In this tutorial, you'll learn the basics of iOS by building your first app: a tip calculator! 
+In this tutorial, you'll learn the basics of iOS by building your first app: a tip calculator!
 
-In the US, it's customary to leave a tip for waiting staff like bartenders and waiters. An accepted range for the tip, also known as gratuity, is between 15% to 20% of your total bill. 
+In the US, it's customary to leave a tip for waiting staff like bartenders and waiters. An accepted range for the tip, also known as gratuity, is between 15% to 20% of your total bill.
 
 Instead of having to do the math in your head, we'll build a simple tip calculator to calculate the tip for us.
 
@@ -47,7 +47,7 @@ By the end of this tutorial, you will:
 
 Now that I have your attention...
 
-To succeed as an iOS developer and built awesome apps, you'll need to know more than just code. This tutorial will introduce new topics like _getting to know Xcode_ and _building UI with Interface Builder_, many which do not involve writing code. This might not seem relevant at first, however you won't be able to build iOS apps without learning about these subjects first.
+To succeed as an iOS developer and build awesome apps, you'll need to know more than just code. This tutorial will introduce new topics like _getting to know Xcode_ and _building UI with Interface Builder_, many which do not involve writing code. This might seem irrelevant at first, however you won't be able to build iOS apps without learning about these subjects first.
 
 As you go through the tutorial, make sure you pay attention when learning how to use Xcode. As an iOS developer, the more familiar you are with Xcode, the easier it'll be to build apps!
 

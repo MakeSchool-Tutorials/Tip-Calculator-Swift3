@@ -7,7 +7,7 @@ We are going to be using `Stack views` to make our layout easier. Stack views ar
 
 By the end of this page, we'll have our full interface finished and it will work on all screen sizes!
 
-![Preliminary layout](../P2-Interface-Building/finished_no_color_logo.png)
+![Basic UI Layout](assets/basic_ui.png)
 
 # Creating stack view rows
 

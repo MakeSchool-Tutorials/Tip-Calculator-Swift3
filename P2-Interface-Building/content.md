@@ -1,37 +1,35 @@
 ---
-title: "Interface building"
+title: "Building UI with Interface Builder"
 slug: interface-building
 ---
 
-Now its time to dive into the `Utility Area`. Everything in the development world has choices. When it comes to making iOS apps, we have a choice in how we setup the graphical interface for our app. You can do it _programmatically_ with code or, you can do it graphically using the integrated _Interface Builder_. Yes, this is the tool first released in 1988 and its better than ever!
+It's time to dive into building the UI (also referred to as views) for our tip calculator. We can build our UI either programmatically (with code) or in storyboard (with _Interface Builder_.) Each approach has different costs and benefits. In this tutorial, we'll build our UI with the _Interface Builder_ because of ease of use and the low learning curve.
 
 > [info]
-If it's so good, why would you want to do it any other way? Thats a great question. Usually when you have more than one person working on an app, it is impossible to merge changes made to these interface files. Also, in the past, this tool did not provide much extra utility over writing your interfaces in code. But as time progressed, new iPhones came out with different screen sizes, and Apple introduced Auto-Layout. No, its not fully automatic, but if you are a solo developer, you need these tools to build apps that work seamlessly on different sized devices. They are also available in code, but we are going to get started with them graphically. We have a `Single View Application` so this is going to be as simple as it can get.
+For most small projects, it's often easier to implement and manage with _Interface Builder_ than with code. If you're working with a large team or building complex UI elements, then you might want to consider building your views programmatically.
 
 <!--  -->
 
 >[action]
-> ## Opening the storyboard
-> Follow the steps below:
->
-Select `Main.storyboard` from the project navigator.
->
-![Main.storyboard](./storyboard_screenshot.png)
+To begin building our UI, we'll need to open our storyboard file. Select the _Main.storyboard_ file in your project navigator. ![Open Storyboard](assets/open_storyboard.png)
 
-Bask in its glory! In the `Utility Area` you can see a few attribute settings for the Storyboard, and some choices underneath in the `Object Browser`. Let's keep rolling.
+This should feel familiar. Remember how you changed the background color of the view controller in the previous step?
 
-# Adding a label
+Next let's look at adding _IB objects_ from the _Object library_ (in the Utilities pane) to our view controller.
+
+# Adding a Label
 
 >[action]
-> ## Adding a label
-> Watch the video and follow the steps below:
+Next we'll add a label to our view controller. Watch the video and follow the steps below:
 >
-1. On the bottom right of the screen, in the `Object Browser`, scroll until you find `Label`
+1. On the bottom right of the screen, in the `Object library`, scroll until you find `Label`
 1. Click and drag the `Label` into the white square in the middle of the screen (dashed-line guides will appear). You might need to zoom into the Storyboard if it won't let you drag the label in (pinch out on the trackpad or click the main area and press `command and +`)
 >
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/01_drag_label.mp4)
 
-Currently you are in the `Attributes Inspector` part of the `Utility Area`. In this area, you will see all the _Attributes_ of the `UILabel`. In code, these are the external _properties_ that you can set on a `UILabel` object. If you are planning to change those attributes dynamically, you will have to do that in code. But if you are going to set them once, including certain automatic/dynamic settings, you can do that here. Let's jump right in.
+In the _Utilities area_, you're active tab is the _Attributes Inspector_. The _Attributes Inspector_ displays all of the properties of the new label object you created. These properties can be set and modified both in code or the _Attributes Inspector_ of the _Interface Builder_.
+
+Let's try this out now by changing the label's text.
 
 >[action]
 > ## Changing the label's text
@@ -40,11 +38,13 @@ Currently you are in the `Attributes Inspector` part of the `Utility Area`. In t
 >
 ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/02_change_label.mp4)
 
-Uh oh. The label is too small to display the full text. We could use the little resizing squares to make it the right size, or even the aptly named `Size Inspector` to change its size. But we are going to use this opportunity to get started with the most powerful part of `Interface Builder` that developers would have killed for back in 1988.
+Uh oh. The label is too small to display the full text. We could use the little resizing squares to make it the right size, or even the aptly named `Size Inspector` to change its size. But we are going to use this opportunity to get started with the most powerful part of `Interface Builder`: auto-layout.
 
 # Constraints and Auto-Layout
 
-`Constraints` are an important part of a system called `Auto-Layout` that we can use to design our interface once, and have it automatically adjust to different screen sizes. It doesn't stop there, it can help if you want to support rotating the device and even other languages. Watch this video for a quick intro to `Auto-Layout`.
+`Constraints` are an important part of a system called `Auto-Layout` that we can use to design our interface once, and have it automatically adjust to different screen sizes. It doesn't stop there, it can help if you want to support rotating the device and even other languages. 
+
+Watch the video below for a quick intro to `Auto-Layout`.
 
 ![ms-video-youtube](https://www.youtube.com/watch?v=MEhDeQurPqg)
 
@@ -71,17 +71,17 @@ Next, we are going to start adding all the other interface labels and fields we'
 
 We are going to get most of our layout on the screen all at once and then slowly fix it so it displays correctly. Our end goal is to have something that looks like this:
 
-![Correct layout with no color](./finished_no_color_logo.png)
+![Basic UI Layout](assets/basic_ui.png)
 
 >[action]
 > Watch the video and follow the steps below:
 >
-1. Drag a `label` from the `Object Browser` onto the screen (slight below the top label and just a bit left of center)
+1. Drag a `label` from the `Object library` onto the screen (slight below the top label and just a bit left of center)
 1. Drag a `text field` to the right of that label and use the guides to line up their vertical centers.
 1. Click the `label` to select it, hold `shift` while clicking the `text field` to have them both selected.
 1. While holding `option`, click and drag the selected `label` and `text field` down to copy it (see video for relative spacing).
 1. Repeat the hold `option`, click and drag two more times so you have `4` pairs of `label` & `text field`.
-1. Drag a `button` from the `Object Browser` under the labels.
+1. Drag a `button` from the `Object library` under the labels.
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/04_labels_button.mp4)
 
@@ -113,7 +113,7 @@ Before we start to fix the layout, let's actually change the second text field t
 > Watch the video and follow the steps below:
 >
 1. Click on the second `text field` to select it. Press `delete` on your keyboard to delete it!
-1. Drag a `Segmented Control` from the `Object Browser` into its place (use the guides to position it).
+1. Drag a `Segmented Control` from the `Object library` into its place (use the guides to position it).
 1. In the `Attributes Inspector`, change the `segments` from `2` to `3`.
 >
 > ![ms-video](https://s3.amazonaws.com/mgwu-misc/TipCalculator-Swift3/08_adding_segment.mp4)
@@ -143,3 +143,6 @@ For the sake of consistency, we want all the `text fields` to have a width of `8
 1. Learned how to modify existing constraints
 >
 > Let's move on to the next page and fix up this layout!
+
+TODO:
+- 
