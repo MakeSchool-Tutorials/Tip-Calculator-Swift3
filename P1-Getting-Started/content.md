@@ -121,10 +121,9 @@ Hiding the debug area is a bit different, its shortcut is `command-shift-y`.
 
 # Quick Review
 
-> So far, you should have:
->
+So far, you should have:
+
 1. Created your first project!
 1. Learned a bit of history
 1. Explored the Xcode interface
 1. Learned about the Navigator, Utility, and Debug areas
->
